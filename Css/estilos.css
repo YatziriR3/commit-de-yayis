@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'Simply Happy';
+    src: url(../Font/Simply\ Happy.otf);
+}
+@font-face {
+    font-family: 'Waredosk';
+    src: url(../Font/Waredosk.otf);
+}
+
+html,body{
+    width:100%; 
+    height: 100%;
+    margin: 2px;
+    padding: 0px;
+    font-family: 'Simply Happy';
+    background-color: #eae7ed;
+    color: #3532a7;
+}
+
+
+.titulo{
+    text-align: center;
+    font-family: 'Waredosk';
+    color: #3532a7;
+    letter-spacing: 5px;
+    font-size: 50px;
+    margin-top: 10vh;
+    width: 100%;
+    background-color: #B793E6;
+    opacity: 0.6;
+    animation: flotar 2s linear infinite alternate;
+}
+@keyframes flotar{
+    to{
+        margin-top: 15vh;
+        color:rgb(0, 0, 0);
+        font-size: 30px;
+    }
+}
+
+
+.contenedor {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    /*align-items: center;
+    justify-content: center;*/
+    background-color: #646ECB;
+    background-size: cover;
+}
+.contenedor h2 {
+    
+    color: #3532a7;
+    font-size: 125px;
+}
+.contenedor i {
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    top: 10px;
+    background: white;
+    animation: rain linear infinite;
+}
+.contenedor img{
+    width: 350px;
+    height: 300px;
+}
+@keyframes rain {
+    0% {
+        top: -10px;
+    }
+    100% {
+        top: 100vh;
+    }
+}
+.contenedor .vapor {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: vaporar 10s linear infinite;
+}
+
+
+.eeyore{
+    background-color: #B793E6;
+    width: 100%;
+    height: 500px;
+}
+.eeyore img{
+    width: 250px;
+    height: 200px;
+    text-align: center;
+}
+.eeyore img{
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    animation: bajar 3s linear infinite alternate;
+    animation-delay: 2s;
+}
+@keyframes bajar{
+    from{
+        top: -300 px; 
+    }
+    to{
+        top: 7px;
+    }
+}
+.tri{
+    background-color:#646ECB; 
+    width: 100%;
+    height: 500px;
+}
+.tri img{
+    width: 500px;
+    height: 400px;
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+@-moz-keyframes parpadeo{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  
+  @-webkit-keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+  }
+  
+  @keyframes parpadeo {  
+    0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+
+.six{
+    width: 100%;
+    height: 600px;
+}
+.six img{
+    width: 450px;
+    height: 400px;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.six img:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+}
+
+.fai{
+    background-color: #B793E6;
+    width: 100%;
+    height: 600px;
+}
+.fai img{
+    width: 400px;
+    height: 500px;
+  transition: width 2s, height 4s;
+}
+.fai img:hover {
+  width: 650px;
+  height: 700px;
+}
+
+
+.for{
+    background-color:#646ECB; 
+    width: 100%;
+    height: 500px;
+}
+
+#dos{
+    width: 40%;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;   
+    float: right;
+    padding: 50px;
+    font-size: 20px;
+
+    }
+
+
+footer img{
+    width: 50px;
+    height: auto;
+}
+footer article {
+    width: 30%; 
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    color: #3532a7;
+    font-family: 'Simply Happy';
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+footer{
+    background-color: #B793E6;
+    
+}
